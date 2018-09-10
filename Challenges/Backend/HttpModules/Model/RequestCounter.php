@@ -24,7 +24,7 @@ final class RequestCounter {
 
 	private static $redisClient;
 
-	public static function getHits( string $key ) : int {
+	public static function getHitsSincePeriodStart( string $key ) : int {
 		$redisClient = self::getRedisClient();
 
 		$value = $redisClient->lLen( $key );
@@ -36,12 +36,12 @@ final class RequestCounter {
 		return 0;
 	}
 
-	public static function incrementHits( string $key, int $value ) {
+	public static function incrementHits( string $key, int $intervalLengthInSeconds ) {
 		if( self::exists( $key ) ) {
 			self::incrementHitsCounter( $key );
 		}
 		else {
-			self::initializeHitsCounter( $key, $value );
+			self::initializeHitsCounter( $key, $intervalLengthInSeconds );
 		}
 	}
 
@@ -94,9 +94,5 @@ final class RequestCounter {
 		}
 
 		return $redis;
-	}
-
-	public static function redisClientErrorCallback( $error ) {
-		error_log( $error );
 	}
 }

@@ -2,6 +2,14 @@
 
 namespace Airtasker\Challenges\Backend\HttpModules\Utils;
 
+/**
+ * HttpRequestContext provides basic functionality of getting IP address from PHP environment.
+ * There is also a simple IP validation that guarantees that IP is present and
+ * further rate limiting logic is possible.
+ *
+ * Class HttpRequestContext
+ * @package Airtasker\Challenges\Backend\HttpModules\Utils
+ */
 final class HttpRequestContext {
 
 	private $ip;

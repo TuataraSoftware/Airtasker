@@ -4,23 +4,23 @@ namespace Airtasker\Challenges\Backend\HttpModules\Model;
 
 final class OneHourStrategy extends ThrottlingStrategy {
 
-	const HITS_LIMIT = 100;
+	const HITS_PER_HOUR_LIMIT = 100;
 	const RETRY_TIME_IN_SECONDS = 3600;
-	const TIME_LIMIT_IN_SECONDS = 3600;
+	const ONE_HOUR_IN_SECONDS = 3600;
 	const HTTP_RESPONSE_CODE = 429;
 
 	public function throttle() {
-
 		$ip = $this->httpRequestContext->getIp();
 
-		$hitsCount = RequestCounter::getHits( $ip );
+		$hitsCount = RequestCounter::getHitsSincePeriodStart( $ip );
 
-		if( $hitsCount >= self::HITS_LIMIT ) {
+		if( $hitsCount >= self::HITS_PER_HOUR_LIMIT ) {
 			$this->isRequestLimitReached = true;
+
 			return;
 		}
 
 		$this->isRequestLimitReached = false;
-		RequestCounter::incrementHits( $ip, self::TIME_LIMIT_IN_SECONDS );
+		RequestCounter::incrementHits( $ip, self::ONE_HOUR_IN_SECONDS );
 	}
 }
