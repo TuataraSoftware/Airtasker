@@ -2,6 +2,8 @@
 
 namespace Airtasker\Challenges\Backend\HttpModules\Model;
 
+require_once( __DIR__ . '/HttpRequestContext.php' );
+
 abstract class ThrottlingStrategy {
 
 	const RETRY_TIME_IN_SECONDS = 0;
@@ -24,6 +26,10 @@ abstract class ThrottlingStrategy {
 
 	public function isThrottled() : bool {
 		return $this->isThrottled ?? false;
+	}
+
+	public function apply() {
+		$this->throttle();
 	}
 
 	abstract public function throttle();

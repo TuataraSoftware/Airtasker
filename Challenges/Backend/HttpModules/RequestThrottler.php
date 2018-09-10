@@ -2,6 +2,9 @@
 
 namespace Airtasker\Challenges\Backend\HttpModules;
 
+require_once (__DIR__ . '/Model/HttpRequestContext.php');
+require_once (__DIR__ . '/Controller/TimeLimitController.php');
+
 use Airtasker\Challenges\Backend\HttpModules\Controller\TimeLimitController;
 use Airtasker\Challenges\Backend\HttpModules\Model\HttpRequestContext;
 

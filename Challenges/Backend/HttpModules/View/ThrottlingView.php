@@ -2,6 +2,8 @@
 
 namespace Airtasker\Challenges\Backend\HttpModules\View;
 
+require_once( __DIR__ . '/../Model/ThrottlingStrategy.php' );
+
 use Airtasker\Challenges\Backend\HttpModules\Model\{
 	ThrottlingStrategy
 };

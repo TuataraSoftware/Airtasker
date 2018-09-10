@@ -47,7 +47,7 @@ class redis_cli
 				$this->handle = false;
 			}
 		} else {
-			$this->handle = fsockopen($host, $port, $errno, $errstr, $this->connect_timeout);
+			$this->handle = pfsockopen($host, $port, $errno, $errstr, $this->connect_timeout);
 		}
 		if (is_resource($this->handle)) {
 			stream_set_timeout($this->handle, $this->timeout);

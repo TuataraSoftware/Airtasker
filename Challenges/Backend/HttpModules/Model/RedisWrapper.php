@@ -2,11 +2,22 @@
 
 namespace Airtasker\Challenges\Backend\HttpModules\Model;
 
-require_once( __DIR__ . '/../../Thirdparty/redis-cli.php' );
+use \Redis;
+use \RedisException;
 
-use redis_cli;
+//require_once( __DIR__ . '/../../Thirdparty/redis-cli.php' );
+//require_once( __DIR__ . '/../../Thirdparty/php-redis-client-master/src/autoloader.php' );
 
-class Redis {
+
+// or require (dirname(__DIR__).'/src/autoloader.php');
+
+//use RedisClient\RedisClient;
+//use RedisClient\Client\Version\RedisClient4x0;
+//use RedisClient\ClientFactory;
+
+//use redis_cli;
+
+class RedisWrapper {
 
 	private static $redisClient;
 
@@ -17,24 +28,27 @@ class Redis {
 	}
 
 	public static function updateHits( string $key, int $value ) {
-		if( Redis::exists( $key ) ) {
-			Redis::setHits( $key );
+		if( RedisWrapper::exists( $key ) ) {
+			RedisWrapper::setHits( $key );
 		}
 		else {
-			Redis::incrementHits( $key, $value );
+			RedisWrapper::incrementHits( $key, $value );
 		}
 	}
 
 	public static function incrementHits( string $key, int $intervalLengthInSeconds ) {
 		$redisClient = self::getRedisClient();
 
-		$redisClient->cmd( 'RPUSH', $key, $key )->cmd( 'EXPIRE', $key, $intervalLengthInSeconds )->set();
+		$redisClient->multi()
+			->rPush( $key, $key )
+			->expire( $key, $intervalLengthInSeconds )
+			->exec();
 	}
 
 	public static function setHits( string $key ) {
 		$redisClient = self::getRedisClient();
 
-		$redisClient->cmd( 'RPUSHX', $key, $key )->set();
+		$redisClient->rPushX( $key, $key );
 	}
 
 	public static function get( string $key ) : string {
@@ -56,7 +70,7 @@ class Redis {
 	public static function getHits( string $key ) : int {
 		$redisClient = self::getRedisClient();
 
-		$value = $redisClient->cmd( 'LLEN', $key )->get();
+		$value = $redisClient->lLen( $key );
 
 		if( is_int( $value ) ) {
 			return $value;
@@ -68,8 +82,7 @@ class Redis {
 	public static function exists( string $key ) : bool {
 		$redisClient = self::getRedisClient();
 
-		$value = $redisClient->cmd( 'EXISTS', $key )->get();
-
+		$value = $redisClient->exists( $key );
 		if( $value ) {
 			return true;
 		}
@@ -77,23 +90,27 @@ class Redis {
 		return false;
 	}
 
-	private static function getRedisClient() : redis_cli {
+	private static function getRedisClient() {
 		if( isset( self::$redisClient ) ) {
 			return self::$redisClient;
 		}
 
-		$redisClient = self::initialiseRedisClient();
-
-		self::$redisClient = $redisClient;
+		self::$redisClient = self::initialiseRedisClient();
 
 		return self::$redisClient;
 	}
 
-	private static function initialiseRedisClient() : redis_cli {
-		$redisClient = new redis_cli();
-		$redisClient->set_error_function( 'Airtasker\Challenges\Backend\HttpModules\Model\Redis::redisClientErrorCallback' );
+	private static function initialiseRedisClient() : Redis {
+		$redis = new Redis();
 
-		return $redisClient;
+		try {
+			$redis->connect( 'redis', 6379 );
+		}
+		catch( RedisException $redisException ) {
+			error_log( $redisException->getMessage() );
+		}
+
+		return $redis;
 	}
 
 	public static function redisClientErrorCallback( $error ) {

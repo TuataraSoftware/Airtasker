@@ -2,6 +2,10 @@
 
 namespace Airtasker\Challenges\Backend\HttpModules\Controller;
 
+require_once( __DIR__ . '/../Model/ThrottlingStrategy.php' );
+require_once( __DIR__ . '/../Model/HttpRequestContext.php' );
+require_once( __DIR__ . '/../View/ThrottlingView.php' );
+
 use Airtasker\Challenges\Backend\HttpModules\Model\{
 	HttpRequestContext, ThrottlingStrategy
 };
@@ -34,7 +38,7 @@ abstract class ThrottlingController {
 	private function proceed() {
 		$throttlingStrategy = $this->throttlingStrategy;
 
-		$throttlingStrategy->throttle();
+		$throttlingStrategy->apply();
 		$isRequestThrottled = $throttlingStrategy->isThrottled();
 
 		if( $isRequestThrottled ) {
@@ -42,7 +46,7 @@ abstract class ThrottlingController {
 		}
 	}
 
-	private function sendResponse() : bool {
+	private function sendResponse() {
 		$throttlingView = $this->throttlingView;
 		$throttlingStrategy = $this->throttlingStrategy;
 

@@ -2,6 +2,8 @@
 
 namespace Airtasker\Challenges\Backend\HttpModules\Model;
 
+require_once (__DIR__ . '/RedisWrapper.php');
+
 final class TimeLimitStrategy extends ThrottlingStrategy {
 
 	const HITS_LIMIT = 100;
@@ -12,7 +14,8 @@ final class TimeLimitStrategy extends ThrottlingStrategy {
 	public function throttle() {
 
 		$ip = $this->httpRequestContext->getIp();
-		$hitsCount = Redis::getHits( $ip );
+
+		$hitsCount = RedisWrapper::getHits( $ip );
 
 		if( $hitsCount > self::HITS_LIMIT ) {
 			$this->isThrottled = true;
@@ -20,6 +23,6 @@ final class TimeLimitStrategy extends ThrottlingStrategy {
 		}
 
 		$this->isThrottled = false;
-		Redis::updateHits( $ip, self::TIME_LIMIT_IN_SECONDS );
+		RedisWrapper::updateHits( $ip, self::TIME_LIMIT_IN_SECONDS );
 	}
 }

@@ -15,7 +15,7 @@ class IpRequestLog implements JsonSerializable {
 		return $this->ip;
 	}
 
-	public function setIp( string $ip ) : void {
+	public function setIp( string $ip ) {
 		$this->ip = $ip;
 	}
 
@@ -23,7 +23,7 @@ class IpRequestLog implements JsonSerializable {
 		return $this->periodStartDateTime;
 	}
 
-	public function setPeriodStartDateTime( $periodStartDateTime ) : void {
+	public function setPeriodStartDateTime( $periodStartDateTime ) {
 		$this->periodStartDateTime = $periodStartDateTime;
 	}
 
@@ -31,7 +31,7 @@ class IpRequestLog implements JsonSerializable {
 		return $this->requestCount;
 	}
 
-	public function setRequestCount( $requestCount ) : void {
+	public function setRequestCount( $requestCount ) {
 		$this->requestCount = $requestCount;
 	}
 
@@ -52,11 +52,11 @@ class IpRequestLog implements JsonSerializable {
 	private function upsert() : bool {
 		$json = json_encode( $this );
 
-		Redis::set( $this->ip, $json );
+		RedisWrapper::set( $this->ip, $json );
 	}
 
 	public static function find( string $ip ) {
-		$json = Redis::get( $ip );
+		$json = RedisWrapper::get( $ip );
 
 		if( empty( $json ) ) {
 			return null;
