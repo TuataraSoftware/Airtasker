@@ -2,211 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="910f8119-e5b7-4d1e-9fad-28f9c5baefad" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Autoloader.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Autoloader.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/Autoloader.php" />
       <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/ThrottlingController.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/ThrottlingController.php" />
       <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/TimeLimitController.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/TimeLimitController.php" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/IpRequestLog.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php" />
+      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/HttpRequestContext.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/HttpRequestContext.php" />
       <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php" />
       <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestThrottler.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestThrottler.php" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/View/ThrottlingView.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/View/ThrottlingView.php" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/View/TimeLimitView.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/View/TimeLimitView.php" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/.travis.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/CHANGELOG.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/COMMANDS.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/composer.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/examples/clusters.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/examples/create_new_instance.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/examples/monitor.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/examples/pipeline.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/examples/pubsub.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/examples/raw_commands.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/examples/transactions.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/phpunit.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Client/AbstractRedisClient.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Client/Version/RedisClient2x6.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Client/Version/RedisClient2x8.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Client/Version/RedisClient3x0.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Client/Version/RedisClient3x2.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Client/Version/RedisClient4x0.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/ClientFactory.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Cluster/ClusterMap.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Cluster/Hash/Crc16.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Parameter/Parameter.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Response/ResponseParser.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/AbstractCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/LastVersionCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x6/CommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x6/ConnectionCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x6/HashesCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x6/KeysCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x6/ListsCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x6/PubSubCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x6/ScriptingCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x6/ServerCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x6/SetsCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x6/SortedSetsCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x6/StringsCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x6/TransactionsCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x8/CommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x8/ConnectionCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x8/HashesCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x8/HyperLogLogCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x8/KeysCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x8/LatencyCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x8/PubSubCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x8/ServerCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x8/SetsCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x8/SortedSetsCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x8/StringsCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version2x9/ServerCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version3x0/ClusterCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version3x0/CommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version3x0/KeysCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version3x0/SortedSetsCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version3x2/CommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version3x2/GeoCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version3x2/HashesCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version3x2/KeysCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version3x2/ScriptingCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version3x2/ServerCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version3x2/SetsCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version3x2/StringsCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version4x0/CommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version4x0/ConnectionCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version4x0/KeysCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version4x0/MemoryCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Command/Traits/Version4x0/ServerCommandsTrait.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Connection/ConnectionFactory.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Connection/ConnectionInterface.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Connection/StreamConnection.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Exception/AskResponseException.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Exception/CommandNotFoundException.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Exception/ConnectionException.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Exception/CrossSlotResponseException.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Exception/EmptyResponseException.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Exception/ErrorException.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Exception/ErrorResponseException.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Exception/ExceptionFactory.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Exception/InvalidArgumentException.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Exception/MovedResponseException.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Exception/RedisException.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Exception/TryAgainResponseException.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Exception/UnknownTypeException.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Pipeline/AbstractPipeline.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Pipeline/Pipeline.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Pipeline/PipelineInterface.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Pipeline/Version/Pipeline2x6.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Pipeline/Version/Pipeline2x8.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Pipeline/Version/Pipeline3x0.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Pipeline/Version/Pipeline3x2.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Pipeline/Version/Pipeline4x0.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Protocol/ProtocolFactory.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Protocol/ProtocolInterface.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Protocol/RedisProtocol.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/RedisClient.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/autoloader.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Build/CommandsListBuildTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Build/PipelineAnnotationsBuildTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Build/VersionTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/BaseVersionTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/ClusterVersionTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/DefaultDatabaseTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/RedisVersionTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x6/CommonTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x6/ConnectionCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x6/HashesCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x6/KeysCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x6/ListsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x6/PipelineTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x6/PubSubCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x6/ScriptingCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x6/ServerCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x6/SetsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x6/SortedSetsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x6/StringsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x6/TransactionsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x8/CommonTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x8/ConnectionCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x8/HashesCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x8/HyperLogLogCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x8/KeysCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x8/LatencyCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x8/ListsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x8/PipelineTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x8/PubSubCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x8/ScriptingCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x8/ServerCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x8/SetsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x8/SortedSetsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x8/StringsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version2x8/TransactionsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x0/ClusterTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x0/CommonTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x0/ConnectionCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x0/HashesCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x0/HyperLogLogCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x0/KeysCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x0/LatencyCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x0/ListsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x0/PipelineTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x0/PubSubCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x0/ScriptingCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x0/ServerCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x0/SetsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x0/SortedSetsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x0/StringsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x0/TransactionsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/ClusterTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/CommonTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/ConnectionCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/GeoCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/HashesCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/HyperLogLogCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/KeysCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/LatencyCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/ListsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/PipelineTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/PubSubCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/ScriptingCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/ServerCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/SetsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/SortedSetsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/StringsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version3x2/TransactionsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/ClusterTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/CommonTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/ConnectionCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/GeoCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/HashesCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/HyperLogLogCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/KeysCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/LatencyCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/ListsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/MemoryCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/PipelineTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/PubSubCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/ScriptingCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/ServerCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/SetsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/SortedSetsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/StringsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Integration/Version4x0/TransactionsCommandsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Unit/Client/AbstractRedisClientIsolatedTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Unit/Client/AbstractRedisClientTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Unit/ClientFactoryTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Unit/Cluster/ClusterMapTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Unit/Command/Response/ResponseParserTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tests/Unit/Protocol/RedisProtocolTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tools/generate_annotations_for_pipeline.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/tools/generate_commands_md.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/Thirdparty/redis-cli.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/php_errors.log" afterPath="$PROJECT_DIR$/php_errors.log" />
+      <change beforePath="$PROJECT_DIR$/php_errors.log" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -217,33 +20,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RequestThrottler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestThrottler.php">
+      <file leaf-file-name="TimeLimitStrategy.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding>
-                <element signature="e#106#182#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThrottlingStrategy.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimeLimitStrategy.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php">
+      <file leaf-file-name="RequestThrottler.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestThrottler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="405">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="e#112#188#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpRequestContext.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/HttpRequestContext.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -252,8 +55,8 @@
       <file leaf-file-name="ThrottlingView.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/View/ThrottlingView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="180">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -262,46 +65,48 @@
       <file leaf-file-name="TimeLimitView.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/View/TimeLimitView.php">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThrottlingStrategy.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <caret line="4" column="70" lean-forward="false" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Autoloader.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Autoloader.php">
+      <file leaf-file-name="ThrottlingController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/ThrottlingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpRequestContext.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/HttpRequestContext.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TimeLimitController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/TimeLimitController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
-                <element signature="e#71#185#0#PHP" expanded="true" />
+                <element signature="e#71#141#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RedisWrapper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+              <folding>
+                <element signature="e#66#77#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -311,14 +116,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedisWrapper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php">
+      <file leaf-file-name="Autoloader.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/Autoloader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-              <folding>
-                <element signature="e#66#77#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -349,6 +152,7 @@
       <find>`</find>
       <find>Redis</find>
       <find>path</find>
+      <find>HttpRequestContext</find>
     </findStrings>
     <replaceStrings>
       <replace>Airtasker\Backend\HttpModules</replace>
@@ -380,7 +184,6 @@
         <option value="$PROJECT_DIR$/Challenges/Backend/Http/HttpRequestThrottler.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/Http/Controller/TimeRangeLimitController.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/HttpRequestThrottler.php" />
-        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/HttpRequestContext.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/Strategy/TimeRangeLimitThrottlingStrategy.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/Strategy/BaseStrategy.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/Strategy/TimeRangeLimitThrottlingThrottlingStrategy.php" />
@@ -404,18 +207,20 @@
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/Redis.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/RequestThrottler/Dockerfile" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/RequestThrottler/php.ini" />
-        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/Autoloader.php" />
+        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/View/TimeLimitView.php" />
+        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php" />
+        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/View/ThrottlingView.php" />
+        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/HttpRequestContext.php" />
+        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php" />
+        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Autoloader.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/HttpRequestContext.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/ThrottlingController.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/TimeLimitController.php" />
-        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php" />
-        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/View/ThrottlingView.php" />
-        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/View/TimeLimitView.php" />
-        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Autoloader.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestThrottler.php" />
-        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php" />
       </list>
     </option>
   </component>
@@ -438,8 +243,8 @@
           <mapping local-root="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php" remote-root="/var/www/html/Challenges/Backend/HttpModules/Model/RedisWrapper.php" />
           <mapping local-root="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php" remote-root="/var/www/html/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php" />
           <mapping local-root="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php" remote-root="/var/www/html/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php" />
-          <mapping local-root="$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestThrottler.php" remote-root="/var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php" />
-          <mapping local-root="$PROJECT_DIR$/index.php" remote-root="/var/www/html/index.php" />
+          <mapping local-root="$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestThrottler.php" remote-root="/var/www/html/Airtasker/Challenges/Backend/HttpModules/RequestThrottler.php" />
+          <mapping local-root="$PROJECT_DIR$/index.php" remote-root="/var/www/html/Airtasker/index.php" />
         </path_mappings>
       </server>
     </servers>
@@ -507,33 +312,15 @@
               <item name="Challenges" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="HttpModules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Docker" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Airtasker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Airtasker" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Challenges" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="HttpModules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Docker" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="nginx" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Airtasker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Airtasker" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Challenges" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="HttpModules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Docker" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="RequestThrottler" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Airtasker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Airtasker" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Challenges" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="HttpModules" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Airtasker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Airtasker" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Challenges" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="HttpModules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Utils" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Airtasker" type="b2602c69:ProjectViewProjectNode" />
@@ -557,6 +344,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils" />
       <recent name="$PROJECT_DIR$/Challenges/Backend/HttpModules" />
       <recent name="$PROJECT_DIR$/Challenges/Backend/Thirdparty" />
       <recent name="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model" />
@@ -613,7 +401,7 @@
       <workItem from="1536454209231" duration="7000" />
       <workItem from="1536456375217" duration="1025000" />
       <workItem from="1536502242046" duration="25033000" />
-      <workItem from="1536557406810" duration="7321000" />
+      <workItem from="1536557406810" duration="9198000" />
     </task>
     <task id="LOCAL-00001" summary="Putting sources to git">
       <created>1536501989920</created>
@@ -622,11 +410,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536501989920</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Code cleanup">
+      <created>1536573008921</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1536573008922</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62583000" />
+    <option name="totallyTimeSpent" value="64460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-345" y="-1080" width="1920" height="1080" extended-state="6" />
@@ -637,7 +432,8 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39920557" sideWeight="0.50532484" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.49574015" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -649,7 +445,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.49574015" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -683,7 +478,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Putting sources to git" />
-    <option name="LAST_COMMIT_MESSAGE" value="Putting sources to git" />
+    <MESSAGE value="Code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -713,8 +509,13 @@
           <line>124</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/Autoloader.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="49" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -733,14 +534,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -764,7 +557,7 @@
         <state relative-caret-position="315">
           <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding>
-            <element signature="e#106#182#0#PHP" expanded="true" />
+            <element signature="e#112#188#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -800,7 +593,7 @@
         <state relative-caret-position="300">
           <caret line="22" column="52" lean-forward="false" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
           <folding>
-            <element signature="e#106#182#0#PHP" expanded="true" />
+            <element signature="e#112#188#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -965,14 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Challenges/Backend/Thirdparty/php-redis-client-master/src/RedisClient/Connection/StreamConnection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2025">
@@ -997,22 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/RequestThrottler/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/RequestThrottler/php.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1805">
@@ -1021,38 +790,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/ThrottlingController.php">
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#71#166#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/RequestThrottler/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php_errors.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-4038">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/TimeLimitController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#71#185#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/HttpRequestContext.php">
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/ThrottlingController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#71#141#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        <state relative-caret-position="75">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding>
             <element signature="e#66#77#0#PHP" expanded="true" />
           </folding>
@@ -1062,41 +852,57 @@
     <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="4" column="70" lean-forward="false" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/Autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/HttpRequestContext.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/View/ThrottlingView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="180">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/View/TimeLimitView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Autoloader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestThrottler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="405">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#106#182#0#PHP" expanded="true" />
+            <element signature="e#112#188#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1105,14 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -3,11 +3,14 @@
 namespace Airtasker\Challenges\Backend\HttpModules\Controller;
 
 use Airtasker\Challenges\Backend\HttpModules\Model\{
-	HttpRequestContext, ThrottlingStrategy, TimeLimitStrategy
+	ThrottlingStrategy, TimeLimitStrategy
 };
+
 use Airtasker\Challenges\Backend\HttpModules\View\{
 	ThrottlingView, TimeLimitView
 };
+
+use Airtasker\Challenges\Backend\HttpModules\Utils\HttpRequestContext;
 
 final class TimeLimitController extends ThrottlingController {
 

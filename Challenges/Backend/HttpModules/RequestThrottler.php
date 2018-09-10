@@ -2,10 +2,10 @@
 
 namespace Airtasker\Challenges\Backend\HttpModules;
 
-require_once( __DIR__ . '/Autoloader.php' );
+require_once( __DIR__ . '/Utils/Autoloader.php' );
 
 use Airtasker\Challenges\Backend\HttpModules\Controller\TimeLimitController;
-use Airtasker\Challenges\Backend\HttpModules\Model\HttpRequestContext;
+use Airtasker\Challenges\Backend\HttpModules\Utils\HttpRequestContext;
 
 final class RequestThrottler {
 

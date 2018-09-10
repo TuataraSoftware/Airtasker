@@ -1,6 +1,6 @@
 <?php
 
-namespace Airtasker\Challenges\Backend\HttpModules\Model;
+namespace Airtasker\Challenges\Backend\HttpModules\Utils;
 
 final class HttpRequestContext {
 

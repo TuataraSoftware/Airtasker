@@ -2,10 +2,9 @@
 
 namespace Airtasker\Challenges\Backend\HttpModules\Controller;
 
-use Airtasker\Challenges\Backend\HttpModules\Model\{
-	HttpRequestContext, ThrottlingStrategy
-};
+use Airtasker\Challenges\Backend\HttpModules\Model\ThrottlingStrategy;
 use Airtasker\Challenges\Backend\HttpModules\View\ThrottlingView;
+use Airtasker\Challenges\Backend\HttpModules\Utils\HttpRequestContext;
 
 abstract class ThrottlingController {
 

@@ -2,6 +2,8 @@
 
 namespace Airtasker\Challenges\Backend\HttpModules\Model;
 
+use Airtasker\Challenges\Backend\HttpModules\Utils\HttpRequestContext;
+
 abstract class ThrottlingStrategy {
 
 	const RETRY_TIME_IN_SECONDS = 0;
