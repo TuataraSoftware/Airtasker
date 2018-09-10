@@ -3,26 +3,26 @@
 namespace Airtasker\Challenges\Backend\HttpModules\Controller;
 
 use Airtasker\Challenges\Backend\HttpModules\Model\{
-	ThrottlingStrategy, TimeLimitStrategy
+	ThrottlingStrategy, OneHourStrategy
 };
 
 use Airtasker\Challenges\Backend\HttpModules\View\{
-	ThrottlingView, TimeLimitView
+	ThrottlingView, TryAgainView
 };
 
 use Airtasker\Challenges\Backend\HttpModules\Utils\HttpRequestContext;
 
-final class TimeLimitController extends ThrottlingController {
+final class OneHourController extends ThrottlingController {
 
 	protected static function generateStrategy( HttpRequestContext $httpRequestContext ) : ThrottlingStrategy {
-		return new TimeLimitStrategy( $httpRequestContext );
+		return new OneHourStrategy( $httpRequestContext );
 	}
 
 	protected static function generateView() : ThrottlingView {
-		return new TimeLimitView();
+		return new TryAgainView();
 	}
 
 	protected static function generateController( ThrottlingStrategy $throttlingStrategy, ThrottlingView $throttlingView ) : ThrottlingController {
-		return new TimeLimitController( $throttlingStrategy, $throttlingView );
+		return new OneHourController( $throttlingStrategy, $throttlingView );
 	}
 }

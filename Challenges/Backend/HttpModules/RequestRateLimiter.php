@@ -4,7 +4,7 @@ namespace Airtasker\Challenges\Backend\HttpModules;
 
 require_once( __DIR__ . '/Utils/Autoloader.php' );
 
-use Airtasker\Challenges\Backend\HttpModules\Controller\TimeLimitController;
+use Airtasker\Challenges\Backend\HttpModules\Controller\OneHourController;
 use Airtasker\Challenges\Backend\HttpModules\Utils\HttpRequestContext;
 
 final class RequestRateLimiter {
@@ -22,6 +22,6 @@ final class RequestRateLimiter {
 		}
 
 		// dependency injection of global request context into the module's controller
-		TimeLimitController::run( $httpRequestContext );
+		OneHourController::run( $httpRequestContext );
 	}
 }

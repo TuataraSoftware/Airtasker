@@ -2,7 +2,7 @@
 
 namespace Airtasker\Challenges\Backend\HttpModules\Model;
 
-final class TimeLimitStrategy extends ThrottlingStrategy {
+final class OneHourStrategy extends ThrottlingStrategy {
 
 	const HITS_LIMIT = 100;
 	const RETRY_TIME_IN_SECONDS = 3600;

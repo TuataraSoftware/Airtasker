@@ -4,7 +4,7 @@ namespace Airtasker\Challenges\Backend\HttpModules\View;
 
 use Airtasker\Challenges\Backend\HttpModules\Model\ThrottlingStrategy;
 
-final class TimeLimitView extends ThrottlingView {
+final class TryAgainView extends ThrottlingView {
 
 	const MESSAGE_TEMPLATE = 'Rate limit exceeded. Try again in %d seconds';
 
