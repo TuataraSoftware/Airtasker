@@ -3,13 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="910f8119-e5b7-4d1e-9fad-28f9c5baefad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Autoloader.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/Autoloader.php" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/ThrottlingController.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/ThrottlingController.php" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/TimeLimitController.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/TimeLimitController.php" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/HttpRequestContext.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/HttpRequestContext.php" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestThrottler.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestThrottler.php" />
-      <change beforePath="$PROJECT_DIR$/php_errors.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/RequestThrottler/Dockerfile" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/PHP/Dockerfile" />
+      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/RequestThrottler/php.ini" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/PHP/php.ini" />
+      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/RequestThrottler/xdebug.ini" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/PHP/xdebug.ini" />
+      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/docker-compose.yml" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/docker-compose.yml" />
+      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/Dockerfile" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/Dockerfile" />
+      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/nginx.conf" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/nginx.conf" />
+      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RequestCounter.php" />
+      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php" />
+      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestThrottler.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestRateLimiter.php" />
+      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,15 +26,15 @@
       <file leaf-file-name="TimeLimitStrategy.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="345">
+              <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestThrottler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestThrottler.php">
+      <file leaf-file-name="RequestRateLimiter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestRateLimiter.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
               <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
@@ -42,32 +45,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpRequestContext.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/HttpRequestContext.php">
+      <file leaf-file-name="Autoloader.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/Autoloader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThrottlingView.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/View/ThrottlingView.php">
+      <file leaf-file-name="RequestCounter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RequestCounter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TimeLimitView.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/View/TimeLimitView.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="531">
+              <caret line="81" column="9" lean-forward="true" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
+              <folding>
+                <element signature="e#66#77#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,8 +70,8 @@
       <file leaf-file-name="ThrottlingStrategy.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="70" lean-forward="false" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
+            <state relative-caret-position="465">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -85,8 +80,8 @@
       <file leaf-file-name="ThrottlingController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/ThrottlingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="295">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="e#71#141#0#PHP" expanded="true" />
               </folding>
@@ -94,14 +89,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedisWrapper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php">
+      <file leaf-file-name="php.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/PHP/php.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-              <folding>
-                <element signature="e#66#77#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="-17210">
+              <caret line="719" column="2" lean-forward="false" selection-start-line="719" selection-start-column="0" selection-end-line="719" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xdebug.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/PHP/xdebug.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,16 +124,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Autoloader.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/Autoloader.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -153,11 +156,12 @@
       <find>Redis</find>
       <find>path</find>
       <find>HttpRequestContext</find>
+      <find>requestthrottler</find>
+      <find>RedisWrapper::</find>
     </findStrings>
     <replaceStrings>
       <replace>Airtasker\Backend\HttpModules</replace>
       <replace>Airtasker\Challenges\Backend\HttpModules</replace>
-      <replace>self::</replace>
       <replace>protected $httpRequestContext;</replace>
       <replace>self::$</replace>
       <replace>HttpRequestContext $httpRequestContext</replace>
@@ -170,6 +174,7 @@
       <replace>Airtasker\Challenges\Backend\HttpModules\Model</replace>
       <replace />
       <replace>RedisWrapper</replace>
+      <replace>self::</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -200,27 +205,30 @@
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/Strategy/TimeLimitStrategy.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/IpRequestLog.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/default_server.conf" />
-        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/nginx.conf" />
         <option value="$PROJECT_DIR$/Challenges/index.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/Thirdparty/redis-cli.php" />
-        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/Dockerfile" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/Redis.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/RequestThrottler/Dockerfile" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/RequestThrottler/php.ini" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/Autoloader.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/View/TimeLimitView.php" />
-        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/View/ThrottlingView.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/HttpRequestContext.php" />
-        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php" />
-        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/docker-compose.yml" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Autoloader.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/HttpRequestContext.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/ThrottlingController.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/TimeLimitController.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php" />
+        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/nginx.conf" />
+        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/PHP/Dockerfile" />
+        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/Dockerfile" />
+        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php" />
+        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php" />
+        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RequestCounter.php" />
         <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestThrottler.php" />
+        <option value="$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestRateLimiter.php" />
       </list>
     </option>
   </component>
@@ -235,11 +243,10 @@
     <servers>
       <server host="localhost.com" id="6472b367-3364-4d8a-8a2c-6350f480da2b" name="localhost.com" use_path_mappings="true">
         <path_mappings>
-          <mapping local-root="$PROJECT_DIR$/Challenges" remote-root="/var/www/html" />
-          <mapping local-root="$PROJECT_DIR$/Challenges/Backend/HttpModules/Autoloader.php" remote-root="/var/www/html/Challenges/Backend/HttpModules/Autoloader.php" />
+          <mapping local-root="$PROJECT_DIR$" remote-root="/var/www/html" />
+          <mapping local-root="$PROJECT_DIR$/Challenges" remote-root="/var/www/html/Airtasker/Challenges" />
           <mapping local-root="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/ThrottlingController.php" remote-root="/var/www/html/Challenges/Backend/HttpModules/Controller/ThrottlingController.php" />
           <mapping local-root="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/TimeLimitController.php" remote-root="/var/www/html/Challenges/Backend/HttpModules/Controller/ThrottlingController.php" />
-          <mapping local-root="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/HttpRequestContext.php" remote-root="/var/www/html/Challenges/Backend/HttpModules/Model/HttpRequestContext.php" />
           <mapping local-root="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php" remote-root="/var/www/html/Challenges/Backend/HttpModules/Model/RedisWrapper.php" />
           <mapping local-root="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php" remote-root="/var/www/html/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php" />
           <mapping local-root="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php" remote-root="/var/www/html/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php" />
@@ -312,6 +319,32 @@
               <item name="Challenges" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="HttpModules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Docker" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Airtasker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Airtasker" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Challenges" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="HttpModules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Docker" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nginx" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Airtasker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Airtasker" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Challenges" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="HttpModules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Docker" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PHP" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Airtasker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Airtasker" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Challenges" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="HttpModules" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -367,18 +400,18 @@
     </option>
   </component>
   <component name="RunManager" selected="PHP Script.ThrottlingStrategy.php">
-    <configuration name="RequestThrottler.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Airtasker/Challenges/Backend/HttpModules/RequestThrottler.php" />
+    <configuration name="RequestRateLimiter.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Airtasker/Challenges/Backend/HttpModules/RequestRateLimiter.php" />
     <configuration name="ThrottlingController.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/ThrottlingController.php" />
     <configuration name="ThrottlingStrategy.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php" />
     <list size="3">
       <item index="0" class="java.lang.String" itemvalue="PHP Script.ThrottlingStrategy.php" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.RequestThrottler.php" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.RequestRateLimiter.php" />
       <item index="2" class="java.lang.String" itemvalue="PHP Script.ThrottlingController.php" />
     </list>
     <recent_temporary>
       <list size="3">
         <item index="0" class="java.lang.String" itemvalue="PHP Script.ThrottlingController.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.RequestThrottler.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.RequestRateLimiter.php" />
         <item index="2" class="java.lang.String" itemvalue="PHP Script.ThrottlingStrategy.php" />
       </list>
     </recent_temporary>
@@ -401,7 +434,7 @@
       <workItem from="1536454209231" duration="7000" />
       <workItem from="1536456375217" duration="1025000" />
       <workItem from="1536502242046" duration="25033000" />
-      <workItem from="1536557406810" duration="9198000" />
+      <workItem from="1536557406810" duration="11964000" />
     </task>
     <task id="LOCAL-00001" summary="Putting sources to git">
       <created>1536501989920</created>
@@ -417,11 +450,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536573008922</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refactoring">
+      <created>1536573819056</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1536573819056</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64460000" />
+    <option name="totallyTimeSpent" value="67226000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-345" y="-1080" width="1920" height="1080" extended-state="6" />
@@ -430,9 +470,9 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20500532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39920557" sideWeight="0.50532484" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5063898" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.49574015" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21747765" sideWeight="0.49361023" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -479,7 +519,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Putting sources to git" />
     <MESSAGE value="Code cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code cleanup" />
+    <MESSAGE value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -510,12 +551,12 @@
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/Autoloader.php</url>
-          <line>4</line>
-          <option name="timeStamp" value="49" />
+          <url>file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php</url>
+          <line>15</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="50" />
+      <option name="time" value="51" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -534,7 +575,7 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php">
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RequestCounter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
@@ -552,7 +593,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestThrottler.php">
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestRateLimiter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
@@ -570,7 +611,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php">
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RequestCounter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
@@ -588,7 +629,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestThrottler.php">
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestRateLimiter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="22" column="52" lean-forward="false" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
@@ -654,13 +695,6 @@
     <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/install.sh" />
     <entry file="file://$PROJECT_DIR$/Challenges/xmlrpc.php" />
     <entry file="file://$PROJECT_DIR$/Challenges/index.php" />
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/nginx.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_7.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
@@ -774,46 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/RequestThrottler/xdebug.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/RequestThrottler/php.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1805">
-          <caret line="719" column="2" lean-forward="false" selection-start-line="719" selection-start-column="0" selection-end-line="719" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/RequestThrottler/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php_errors.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="-4038">
@@ -825,50 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/ThrottlingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#71#141#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RedisWrapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding>
-            <element signature="e#66#77#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="70" lean-forward="false" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/Autoloader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -897,7 +847,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestThrottler.php">
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="54" column="1" lean-forward="true" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/nginx/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/PHP/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/PHP/xdebug.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/PHP/php.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17210">
+          <caret line="719" column="2" lean-forward="false" selection-start-line="719" selection-start-column="0" selection-end-line="719" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Utils/Autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/ThrottlingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#71#141#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/ThrottlingStrategy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/RequestCounter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="81" column="9" lean-forward="true" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
+          <folding>
+            <element signature="e#66#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/Docker/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestRateLimiter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />

@@ -13,14 +13,14 @@ final class TimeLimitStrategy extends ThrottlingStrategy {
 
 		$ip = $this->httpRequestContext->getIp();
 
-		$hitsCount = RedisWrapper::getHits( $ip );
+		$hitsCount = RequestCounter::getHits( $ip );
 
-		if( $hitsCount > self::HITS_LIMIT ) {
+		if( $hitsCount >= self::HITS_LIMIT ) {
 			$this->isThrottled = true;
 			return;
 		}
 
 		$this->isThrottled = false;
-		RedisWrapper::updateHits( $ip, self::TIME_LIMIT_IN_SECONDS );
+		RequestCounter::countHits( $ip, self::TIME_LIMIT_IN_SECONDS );
 	}
 }

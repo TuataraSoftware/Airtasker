@@ -7,7 +7,7 @@ require_once( __DIR__ . '/Utils/Autoloader.php' );
 use Airtasker\Challenges\Backend\HttpModules\Controller\TimeLimitController;
 use Airtasker\Challenges\Backend\HttpModules\Utils\HttpRequestContext;
 
-final class RequestThrottler {
+final class RequestRateLimiter {
 
 	const HTTP_REQUEST_ERROR_MESSAGE = 'Unable to throttle the request. Request context is invalid.';
 

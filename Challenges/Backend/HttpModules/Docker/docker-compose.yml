@@ -7,11 +7,11 @@ services:
         volumes:
             - ../../../../../:/var/www/html
         links:
-            - requestthrottler
+            - php
         restart: always
 
-    requestthrottler:
-        build: ./RequestThrottler
+    php:
+        build: ./PHP
         volumes:
             - ../../../../../:/var/www/html
         restart: always
