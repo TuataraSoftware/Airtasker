@@ -5,6 +5,18 @@ namespace Airtasker\Challenges\Backend\HttpModules\Model;
 use \Redis;
 use \RedisException;
 
+/**
+ * RequestCounter is the main model of the module.
+ * It stores requests count for each IP address in Redis which:
+ *
+ * 1. provides fast in-memory data access
+ * 2. automatically expires obsolete records
+ * 3. works correctly in race conditions
+ * 4. dumps its database on disc
+ *
+ * Class RequestCounter
+ * @package Airtasker\Challenges\Backend\HttpModules\Model
+ */
 final class RequestCounter {
 
 	const REDIS_DOCKER_CONTAINER_NAME = 'redis';

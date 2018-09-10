@@ -10,7 +10,7 @@ abstract class ThrottlingStrategy {
 	const HTTP_RESPONSE_CODE = 0;
 
 	protected $httpRequestContext;
-	protected $isThrottled;
+	protected $isRequestLimitReached;
 
 	public function __construct( HttpRequestContext $httpRequestContext ) {
 		$this->httpRequestContext = $httpRequestContext;
@@ -24,8 +24,8 @@ abstract class ThrottlingStrategy {
 		return static::HTTP_RESPONSE_CODE;
 	}
 
-	public function isThrottled() : bool {
-		return $this->isThrottled ?? false;
+	public function isRequestLimitReached() : bool {
+		return $this->isRequestLimitReached ?? false;
 	}
 
 	public function apply() {

@@ -16,11 +16,11 @@ final class OneHourStrategy extends ThrottlingStrategy {
 		$hitsCount = RequestCounter::getHits( $ip );
 
 		if( $hitsCount >= self::HITS_LIMIT ) {
-			$this->isThrottled = true;
+			$this->isRequestLimitReached = true;
 			return;
 		}
 
-		$this->isThrottled = false;
+		$this->isRequestLimitReached = false;
 		RequestCounter::incrementHits( $ip, self::TIME_LIMIT_IN_SECONDS );
 	}
 }
