@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="910f8119-e5b7-4d1e-9fad-28f9c5baefad" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/TimeLimitController.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Controller/OneHourController.php" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/TimeLimitStrategy.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/Model/OneHourStrategy.php" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestRateLimiter.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/RequestRateLimiter.php" />
-      <change beforePath="$PROJECT_DIR$/Challenges/Backend/HttpModules/View/TimeLimitView.php" afterPath="$PROJECT_DIR$/Challenges/Backend/HttpModules/View/TryAgainView.php" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +27,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="405">
-                <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -345,7 +340,7 @@
       <workItem from="1536454209231" duration="7000" />
       <workItem from="1536456375217" duration="1025000" />
       <workItem from="1536502242046" duration="25033000" />
-      <workItem from="1536557406810" duration="18287000" />
+      <workItem from="1536557406810" duration="18457000" />
     </task>
     <task id="LOCAL-00001" summary="Putting sources to git">
       <created>1536501989920</created>
@@ -379,7 +374,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73549000" />
+    <option name="totallyTimeSpent" value="73719000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-345" y="-1080" width="1920" height="1080" extended-state="6" />
@@ -856,8 +851,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="405">
-            <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
             <folding />
           </first_editor>
           <second_editor />

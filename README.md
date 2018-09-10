@@ -1,5 +1,4 @@
-Airtasker Backend Challenge: 
-##Rate Limiter
+#Airtasker Backend Challenge: Rate Limiter
 
 Author:
 
