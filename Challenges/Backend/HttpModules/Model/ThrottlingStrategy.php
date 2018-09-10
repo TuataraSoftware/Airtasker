@@ -2,8 +2,6 @@
 
 namespace Airtasker\Challenges\Backend\HttpModules\Model;
 
-require_once( __DIR__ . '/HttpRequestContext.php' );
-
 abstract class ThrottlingStrategy {
 
 	const RETRY_TIME_IN_SECONDS = 0;

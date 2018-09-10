@@ -2,8 +2,6 @@
 
 namespace Airtasker\Challenges\Backend\HttpModules\Model;
 
-require_once (__DIR__ . '/RedisWrapper.php');
-
 final class TimeLimitStrategy extends ThrottlingStrategy {
 
 	const HITS_LIMIT = 100;

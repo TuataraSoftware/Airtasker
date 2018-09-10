@@ -1355,3 +1355,102 @@ Stack trace:
 #3 /var/www/html/Challenges/Backend/HttpModules/Controller/ThrottlingController.php(41): Airtasker\Challenges\Backend\HttpModules\Model\ThrottlingStrategy->apply()
 #4 /var/www/html/Challenges/Backend/HttpModules/Controller/ThrottlingController.php(27): Airtasker\Challenges\Backend\HttpModules\Controller\ThrottlingController->proceed()
 #5 /var/www/html/Challenges/B in /var/www/html/Challenges/Backend/HttpModules/Model/RedisWrapper.php on line 44
+[10-Sep-2018 09:13:40 UTC] PHP Warning:  include_once(/var/www/html/class/Airtasker\Challenges\Backend\HttpModules\Model\HttpRequestContext.php): failed to open stream: No such file or directory in /var/www/html/Challenges/Backend/HttpModules/Autoloader.php on line 6
+[10-Sep-2018 09:13:40 UTC] PHP Stack trace:
+[10-Sep-2018 09:13:40 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[10-Sep-2018 09:13:40 UTC] PHP   2. Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run() /var/www/html/index.php:7
+[10-Sep-2018 09:13:40 UTC] PHP   3. spl_autoload_call(*uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:13:40 UTC] PHP   4. {closure:/var/www/html/Challenges/Backend/HttpModules/Autoloader.php:3-8}($className = *uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:13:40 UTC] PHP Warning:  include_once(): Failed opening '/var/www/html/class/Airtasker\Challenges\Backend\HttpModules\Model\HttpRequestContext.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/Challenges/Backend/HttpModules/Autoloader.php on line 6
+[10-Sep-2018 09:13:40 UTC] PHP Stack trace:
+[10-Sep-2018 09:13:40 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[10-Sep-2018 09:13:40 UTC] PHP   2. Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run() /var/www/html/index.php:7
+[10-Sep-2018 09:13:40 UTC] PHP   3. spl_autoload_call(*uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:13:40 UTC] PHP   4. {closure:/var/www/html/Challenges/Backend/HttpModules/Autoloader.php:3-8}($className = *uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:13:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Airtasker\Challenges\Backend\HttpModules\Model\HttpRequestContext' not found in /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+Stack trace:
+#0 /var/www/html/index.php(7): Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run()
+#1 {main}
+  thrown in /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php on line 17
+[10-Sep-2018 09:15:33 UTC] PHP Warning:  include_once(/var/www/html/class/Airtasker\Challenges\Backend\HttpModules\Model\HttpRequestContext.php): failed to open stream: No such file or directory in /var/www/html/Challenges/Backend/HttpModules/Autoloader.php on line 6
+[10-Sep-2018 09:15:33 UTC] PHP Stack trace:
+[10-Sep-2018 09:15:33 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[10-Sep-2018 09:15:33 UTC] PHP   2. Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run() /var/www/html/index.php:7
+[10-Sep-2018 09:15:33 UTC] PHP   3. spl_autoload_call(*uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:15:33 UTC] PHP   4. {closure:/var/www/html/Challenges/Backend/HttpModules/Autoloader.php:3-8}($className = *uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:15:33 UTC] PHP Warning:  include_once(): Failed opening '/var/www/html/class/Airtasker\Challenges\Backend\HttpModules\Model\HttpRequestContext.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/Challenges/Backend/HttpModules/Autoloader.php on line 6
+[10-Sep-2018 09:15:33 UTC] PHP Stack trace:
+[10-Sep-2018 09:15:33 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[10-Sep-2018 09:15:33 UTC] PHP   2. Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run() /var/www/html/index.php:7
+[10-Sep-2018 09:15:33 UTC] PHP   3. spl_autoload_call(*uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:15:33 UTC] PHP   4. {closure:/var/www/html/Challenges/Backend/HttpModules/Autoloader.php:3-8}($className = *uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:15:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Airtasker\Challenges\Backend\HttpModules\Model\HttpRequestContext' not found in /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+Stack trace:
+#0 /var/www/html/index.php(7): Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run()
+#1 {main}
+  thrown in /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php on line 17
+[10-Sep-2018 09:16:23 UTC] PHP Warning:  include_once(/var/www/html/class/Airtasker/Challenges/Backend/HttpModules/Model/HttpRequestContext.php): failed to open stream: No such file or directory in /var/www/html/Challenges/Backend/HttpModules/Autoloader.php on line 6
+[10-Sep-2018 09:16:23 UTC] PHP Stack trace:
+[10-Sep-2018 09:16:23 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[10-Sep-2018 09:16:23 UTC] PHP   2. Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run() /var/www/html/index.php:7
+[10-Sep-2018 09:16:23 UTC] PHP   3. spl_autoload_call(*uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:16:23 UTC] PHP   4. {closure:/var/www/html/Challenges/Backend/HttpModules/Autoloader.php:3-8}($className = *uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:16:23 UTC] PHP Warning:  include_once(): Failed opening '/var/www/html/class/Airtasker/Challenges/Backend/HttpModules/Model/HttpRequestContext.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/Challenges/Backend/HttpModules/Autoloader.php on line 6
+[10-Sep-2018 09:16:23 UTC] PHP Stack trace:
+[10-Sep-2018 09:16:23 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[10-Sep-2018 09:16:23 UTC] PHP   2. Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run() /var/www/html/index.php:7
+[10-Sep-2018 09:16:23 UTC] PHP   3. spl_autoload_call(*uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:16:23 UTC] PHP   4. {closure:/var/www/html/Challenges/Backend/HttpModules/Autoloader.php:3-8}($className = *uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:16:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Airtasker\Challenges\Backend\HttpModules\Model\HttpRequestContext' not found in /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+Stack trace:
+#0 /var/www/html/index.php(7): Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run()
+#1 {main}
+  thrown in /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php on line 17
+[10-Sep-2018 09:18:03 UTC] PHP Warning:  require_once(/var/www/htmlAirtasker/Challenges/Backend/HttpModules/Model/HttpRequestContext.php): failed to open stream: No such file or directory in /var/www/html/Challenges/Backend/HttpModules/Autoloader.php on line 7
+[10-Sep-2018 09:18:03 UTC] PHP Stack trace:
+[10-Sep-2018 09:18:03 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[10-Sep-2018 09:18:03 UTC] PHP   2. Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run() /var/www/html/index.php:7
+[10-Sep-2018 09:18:03 UTC] PHP   3. spl_autoload_call(*uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:18:03 UTC] PHP   4. {closure:/var/www/html/Challenges/Backend/HttpModules/Autoloader.php:3-9}($className = *uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:18:03 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/www/htmlAirtasker/Challenges/Backend/HttpModules/Model/HttpRequestContext.php' (include_path='.:/usr/local/lib/php') in /var/www/html/Challenges/Backend/HttpModules/Autoloader.php on line 7
+[10-Sep-2018 09:18:03 UTC] PHP Stack trace:
+[10-Sep-2018 09:18:03 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[10-Sep-2018 09:18:03 UTC] PHP   2. Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run() /var/www/html/index.php:7
+[10-Sep-2018 09:18:03 UTC] PHP   3. spl_autoload_call(*uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:18:03 UTC] PHP   4. {closure:/var/www/html/Challenges/Backend/HttpModules/Autoloader.php:3-9}($className = *uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:18:59 UTC] PHP Warning:  require_once(/var/www/html/Airtasker/Challenges/Backend/HttpModules/Model/HttpRequestContext.php): failed to open stream: No such file or directory in /var/www/html/Challenges/Backend/HttpModules/Autoloader.php on line 7
+[10-Sep-2018 09:18:59 UTC] PHP Stack trace:
+[10-Sep-2018 09:18:59 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[10-Sep-2018 09:18:59 UTC] PHP   2. Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run() /var/www/html/index.php:7
+[10-Sep-2018 09:18:59 UTC] PHP   3. spl_autoload_call(*uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:18:59 UTC] PHP   4. {closure:/var/www/html/Challenges/Backend/HttpModules/Autoloader.php:3-9}($className = *uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:18:59 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/www/html/Airtasker/Challenges/Backend/HttpModules/Model/HttpRequestContext.php' (include_path='.:/usr/local/lib/php') in /var/www/html/Challenges/Backend/HttpModules/Autoloader.php on line 7
+[10-Sep-2018 09:18:59 UTC] PHP Stack trace:
+[10-Sep-2018 09:18:59 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[10-Sep-2018 09:18:59 UTC] PHP   2. Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run() /var/www/html/index.php:7
+[10-Sep-2018 09:18:59 UTC] PHP   3. spl_autoload_call(*uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:18:59 UTC] PHP   4. {closure:/var/www/html/Challenges/Backend/HttpModules/Autoloader.php:3-9}($className = *uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:24:22 UTC] PHP Warning:  require_once(/var/www/html/Challenges/Backend/HttpModules/../../../..//Airtasker/Challenges/Backend/HttpModules/Model/HttpRequestContext.php): failed to open stream: No such file or directory in /var/www/html/Challenges/Backend/HttpModules/Autoloader.php on line 8
+[10-Sep-2018 09:24:22 UTC] PHP Stack trace:
+[10-Sep-2018 09:24:22 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[10-Sep-2018 09:24:22 UTC] PHP   2. Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run() /var/www/html/index.php:7
+[10-Sep-2018 09:24:22 UTC] PHP   3. spl_autoload_call(*uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:24:22 UTC] PHP   4. {closure:/var/www/html/Challenges/Backend/HttpModules/Autoloader.php:3-10}($className = *uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:24:22 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/www/html/Challenges/Backend/HttpModules/../../../..//Airtasker/Challenges/Backend/HttpModules/Model/HttpRequestContext.php' (include_path='.:/usr/local/lib/php') in /var/www/html/Challenges/Backend/HttpModules/Autoloader.php on line 8
+[10-Sep-2018 09:24:22 UTC] PHP Stack trace:
+[10-Sep-2018 09:24:22 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[10-Sep-2018 09:24:22 UTC] PHP   2. Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run() /var/www/html/index.php:7
+[10-Sep-2018 09:24:22 UTC] PHP   3. spl_autoload_call(*uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:24:22 UTC] PHP   4. {closure:/var/www/html/Challenges/Backend/HttpModules/Autoloader.php:3-10}($className = *uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:24:45 UTC] PHP Warning:  require_once(/var/www/html/Challenges/Backend/HttpModules/../../../../Challenges/Backend/HttpModules/Model/HttpRequestContext.php): failed to open stream: No such file or directory in /var/www/html/Challenges/Backend/HttpModules/Autoloader.php on line 9
+[10-Sep-2018 09:24:45 UTC] PHP Stack trace:
+[10-Sep-2018 09:24:45 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[10-Sep-2018 09:24:45 UTC] PHP   2. Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run() /var/www/html/index.php:7
+[10-Sep-2018 09:24:45 UTC] PHP   3. spl_autoload_call(*uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:24:45 UTC] PHP   4. {closure:/var/www/html/Challenges/Backend/HttpModules/Autoloader.php:3-10}($className = *uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:24:45 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/www/html/Challenges/Backend/HttpModules/../../../../Challenges/Backend/HttpModules/Model/HttpRequestContext.php' (include_path='.:/usr/local/lib/php') in /var/www/html/Challenges/Backend/HttpModules/Autoloader.php on line 9
+[10-Sep-2018 09:24:45 UTC] PHP Stack trace:
+[10-Sep-2018 09:24:45 UTC] PHP   1. {main}() /var/www/html/index.php:0
+[10-Sep-2018 09:24:45 UTC] PHP   2. Airtasker\Challenges\Backend\HttpModules\RequestThrottler::run() /var/www/html/index.php:7
+[10-Sep-2018 09:24:45 UTC] PHP   3. spl_autoload_call(*uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17
+[10-Sep-2018 09:24:45 UTC] PHP   4. {closure:/var/www/html/Challenges/Backend/HttpModules/Autoloader.php:3-10}($className = *uninitialized*) /var/www/html/Challenges/Backend/HttpModules/RequestThrottler.php:17

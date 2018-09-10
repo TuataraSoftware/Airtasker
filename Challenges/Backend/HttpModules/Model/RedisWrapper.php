@@ -5,27 +5,9 @@ namespace Airtasker\Challenges\Backend\HttpModules\Model;
 use \Redis;
 use \RedisException;
 
-//require_once( __DIR__ . '/../../Thirdparty/redis-cli.php' );
-//require_once( __DIR__ . '/../../Thirdparty/php-redis-client-master/src/autoloader.php' );
-
-
-// or require (dirname(__DIR__).'/src/autoloader.php');
-
-//use RedisClient\RedisClient;
-//use RedisClient\Client\Version\RedisClient4x0;
-//use RedisClient\ClientFactory;
-
-//use redis_cli;
-
 class RedisWrapper {
 
 	private static $redisClient;
-
-	public static function set( string $key, string $value ) {
-		$redisClient = self::getRedisClient();
-
-		$redisClient->cmd( 'SET', $key, $value )->set();
-	}
 
 	public static function updateHits( string $key, int $value ) {
 		if( RedisWrapper::exists( $key ) ) {
@@ -49,22 +31,6 @@ class RedisWrapper {
 		$redisClient = self::getRedisClient();
 
 		$redisClient->rPushX( $key, $key );
-	}
-
-	public static function get( string $key ) : string {
-		$redisClient = self::getRedisClient();
-
-		$value = $redisClient->cmd( 'GET', $key )->get();
-
-		if( empty( $value ) ) {
-			return '';
-		}
-
-		if( is_string( $value ) ) {
-			return $value;
-		}
-
-		return '';
 	}
 
 	public static function getHits( string $key ) : int {
