@@ -21,6 +21,6 @@ final class TimeLimitStrategy extends ThrottlingStrategy {
 		}
 
 		$this->isThrottled = false;
-		RequestCounter::countHits( $ip, self::TIME_LIMIT_IN_SECONDS );
+		RequestCounter::incrementHits( $ip, self::TIME_LIMIT_IN_SECONDS );
 	}
 }

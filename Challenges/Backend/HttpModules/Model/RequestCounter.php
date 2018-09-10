@@ -24,16 +24,16 @@ final class RequestCounter {
 		return 0;
 	}
 
-	public static function countHits( string $key, int $value ) {
+	public static function incrementHits( string $key, int $value ) {
 		if( self::exists( $key ) ) {
 			self::incrementHitsCounter( $key );
 		}
 		else {
-			self::initialiseHitsCounter( $key, $value );
+			self::initializeHitsCounter( $key, $value );
 		}
 	}
 
-	private static function initialiseHitsCounter( string $key, int $intervalLengthInSeconds ) {
+	private static function initializeHitsCounter( string $key, int $intervalLengthInSeconds ) {
 		$redisClient = self::getRedisClient();
 
 		$redisClient->multi()
