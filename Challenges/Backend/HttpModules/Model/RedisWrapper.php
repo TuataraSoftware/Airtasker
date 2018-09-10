@@ -5,7 +5,7 @@ namespace Airtasker\Challenges\Backend\HttpModules\Model;
 use \Redis;
 use \RedisException;
 
-class RedisWrapper {
+final class RedisWrapper {
 
 	private static $redisClient;
 

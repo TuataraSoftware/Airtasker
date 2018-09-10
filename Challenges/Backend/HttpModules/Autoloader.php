@@ -2,9 +2,8 @@
 
 spl_autoload_register( function( $className ) {
 
-	$className = str_replace( "\\", DIRECTORY_SEPARATOR, $className );
-	$fullPath = $_SERVER[ 'DOCUMENT_ROOT' ] . DIRECTORY_SEPARATOR .  $className . '.php';
-	$fullPath = str_replace('Airtasker/', '', $fullPath);
+	$relativePath = str_replace( "\\", DIRECTORY_SEPARATOR, $className ) . '.php';
+	$fullPath = $_SERVER[ 'DOCUMENT_ROOT' ] . DIRECTORY_SEPARATOR . $relativePath;
 
 	require_once( $fullPath );
 } );

@@ -2,9 +2,7 @@
 
 namespace Airtasker\Challenges\Backend\HttpModules\View;
 
-use Airtasker\Challenges\Backend\HttpModules\Model\{
-	ThrottlingStrategy
-};
+use Airtasker\Challenges\Backend\HttpModules\Model\ThrottlingStrategy;
 
 abstract class ThrottlingView {
 

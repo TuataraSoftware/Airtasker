@@ -2,16 +2,12 @@
 
 namespace Airtasker\Challenges\Backend\HttpModules\Model;
 
-use DateTime;
-
 final class HttpRequestContext {
 
-	private $requestTime;
 	private $ip;
 	private $isValid;
 
 	public function __construct() {
-		$this->requestTime = new DateTime();
 		$this->ip = self::parseIp();
 		$this->isValid = self::validate( $this->ip );
 	}
@@ -22,10 +18,6 @@ final class HttpRequestContext {
 
 	public function getIp() : string {
 		return $this->ip;
-	}
-
-	public function getRequestTime() : DateTime {
-		return $this->requestTime;
 	}
 
 	private static function validate( string $ip ) : bool {

@@ -5,7 +5,7 @@ services:
         ports:
             - '80:80'
         volumes:
-            - ../../../../:/var/www/html
+            - ../../../../../:/var/www/html
         links:
             - requestthrottler
         restart: always
@@ -13,7 +13,7 @@ services:
     requestthrottler:
         build: ./RequestThrottler
         volumes:
-            - ../../../../:/var/www/html
+            - ../../../../../:/var/www/html
         restart: always
 
     redis:
@@ -28,4 +28,3 @@ networks:
             driver: default
             config:
                 - subnet: 192.168.129.0/24
-#                - subnet: 127.0.0.0/24
