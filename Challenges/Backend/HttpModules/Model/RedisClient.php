@@ -28,28 +28,25 @@ final class RedisClient {
 	}
 
 	public static function generate() : self {
-		$redis = self::getRedis();
-
+		$redis = new Redis();
 		$redisClient = new self( $redis );
+
+		$redisClient->connect();
 
 		return $redisClient;
 	}
 
 	public function getCounter( string $key ) : int {
-		$value = 0;
+		$counter = 0;
 
 		try {
-			$value = $this->redis->lLen( $key );
+			$counter = $this->redis->lLen( $key );
 		}
 		catch( RedisException $redisException ) {
 			self::logRedisException( $redisException );
 		}
 
-		if( is_int( $value ) ) {
-			return $value;
-		}
-
-		return 0;
+		return $counter;
 	}
 
 	public function setCounter( string $key, int $expirationTimeInSeconds ) {
@@ -73,17 +70,13 @@ final class RedisClient {
 		}
 	}
 
-	private static function getRedis() : Redis {
-		$redis = new Redis();
-
+	private function connect() {
 		try {
-			$redis->connect( self::REDIS_DOCKER_CONTAINER_NAME, self::REDIS_DOCKER_CONTAINER_PORT );
+			$this->redis->connect( self::REDIS_DOCKER_CONTAINER_NAME, self::REDIS_DOCKER_CONTAINER_PORT );
 		}
 		catch( RedisException $redisException ) {
 			self::logRedisException( $redisException );
 		}
-
-		return $redis;
 	}
 
 	/**
