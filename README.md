@@ -1,16 +1,14 @@
 **Airtasker Backend Challenge: Rate Limiter**
 
+Author: Alexey Gerasimov
+
 ---
 
-Author:
-
-- Alexey Gerasimov
-
-Requirements:
+**Requirements:**
 
 - Docker 17.*
 
-Usage:
+**Usage:**
 
 - Include Airtasker/Challenges/Backend/HttpModules/RequestRateLimiter.php:
 
@@ -20,9 +18,7 @@ require_once ( $_SERVER[ 'DOCUMENT_ROOT' ] . '/Airtasker/Challenges/Backend/Http
 
 Airtasker\Challenges\Backend\HttpModules\RequestRateLimiter\RequestRateLimiter::run();
 
----
-
-Deployment:
+**Deployment:**
 
 - Download repository:
 
