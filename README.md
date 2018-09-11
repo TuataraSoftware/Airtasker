@@ -22,7 +22,7 @@ Author: Alexey Gerasimov
 
 - Download repository:
 
-`git clone https://github.com/TuataraSoftware/AirtaskerBackendChallenge`
+`git clone https://github.com/TuataraSoftware/Airtasker`
 
 - Build & run Docker container:
  
