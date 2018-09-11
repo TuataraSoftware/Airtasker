@@ -30,13 +30,20 @@ final class RedisClient {
 	public static function generate() : self {
 		$redis = self::getRedis();
 
-		$redisClient = new RedisClient( $redis );
+		$redisClient = new self( $redis );
 
 		return $redisClient;
 	}
 
 	public function getCounter( string $key ) : int {
-		$value = $this->redis->lLen( $key );
+		$value = 0;
+
+		try {
+			$value = $this->redis->lLen( $key );
+		}
+		catch( RedisException $redisException ) {
+			self::logRedisException( $redisException );
+		}
 
 		if( is_int( $value ) ) {
 			return $value;
@@ -46,30 +53,24 @@ final class RedisClient {
 	}
 
 	public function setCounter( string $key, int $expirationTimeInSeconds ) {
-		if( $this->exists( $key ) ) {
-			$this->incrementCounter( $key );
+		$redis = $this->redis;
+
+		try {
+			// incrementing counter
+			if( $redis->exists( $key ) ) {
+				$redis->rPushX( $key, $key );
+				return;
+			}
+
+			// adding counter
+			$redis->multi()
+				->rPush( $key, $key )
+				->expire( $key, $expirationTimeInSeconds )
+				->exec();
 		}
-		else {
-			$this->initializeCounter( $key, $expirationTimeInSeconds );
+		catch( RedisException $redisException ) {
+			self::logRedisException( $redisException );
 		}
-	}
-
-	private function exists( string $key ) : bool {
-		$value = $this->redis->exists( $key );
-
-		return $value;
-	}
-
-	private function incrementCounter( string $key ) {
-		$this->redis->rPushX( $key, $key );
-	}
-
-	private function initializeCounter( string $key, int $expirationTimeInSeconds ) {
-		$this->redis
-			->multi()
-			->rPush( $key, $key )
-			->expire( $key, $expirationTimeInSeconds )
-			->exec();
 	}
 
 	private static function getRedis() : Redis {
@@ -79,10 +80,19 @@ final class RedisClient {
 			$redis->connect( self::REDIS_DOCKER_CONTAINER_NAME, self::REDIS_DOCKER_CONTAINER_PORT );
 		}
 		catch( RedisException $redisException ) {
-			$errorMessage = $redisException->getMessage();
-			error_log( $errorMessage );
+			self::logRedisException( $redisException );
 		}
 
 		return $redis;
+	}
+
+	/**
+	 * This function logs Redis exceptions when Redis goes down
+	 *
+	 * @param RedisException $redisException
+	 */
+	private static function logRedisException( RedisException $redisException ) {
+		$errorMessage = $redisException->getMessage();
+		error_log( $errorMessage );
 	}
 }
