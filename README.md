@@ -1,5 +1,7 @@
 #Airtasker Backend Challenge: Rate Limiter
 
+---
+
 Author:
 
 - Alexey Gerasimov
@@ -22,5 +24,3 @@ For debug purposes:
 
 - Start Docker: 
 docker-compose -f Challenges/Backend/HttpModules/Docker-debug/docker-compose.yml up --build
-
----

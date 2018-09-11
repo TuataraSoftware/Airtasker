@@ -13,7 +13,7 @@ use Airtasker\Challenges\Backend\HttpModules\View\{
 use Airtasker\Challenges\Backend\HttpModules\Utils\HttpRequestContext;
 
 /**
- * This class binds rate-limiting strategy and response rendering view to itself.
+ * This class binds rate-limiting strategy and response rendering view.
  * To extend current logic with another strategy and/or view, we only need to inherit a new
  * class from ThrottlingController and implement its abstract methods.
  *

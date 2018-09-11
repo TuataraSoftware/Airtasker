@@ -21,12 +21,14 @@ abstract class ThrottlingController {
 	protected $throttlingStrategy;
 	protected $throttlingView;
 
-	protected function __construct( ThrottlingStrategy $throttlingStrategy, ThrottlingView $throttlingView ) {
-		$this->throttlingStrategy = $throttlingStrategy;
-		$this->throttlingView = $throttlingView;
-	}
-
-	public static function run( HttpRequestContext $httpRequestContext ) {
+	/**
+	 * This function provides public interface of request-limiting logic during request processing.
+	 * It is supposed to cover most possible behaviours as is.
+	 * It can be also overridden in children classes if more complex behaviour is required like communication to external systems
+	 *
+	 * @param HttpRequestContext $httpRequestContext
+	 */
+	public static function processRequest( HttpRequestContext $httpRequestContext ) {
 		$throttlingController = self::getInstance( $httpRequestContext );
 
 		$throttlingController->throttlingStrategy->apply();
@@ -35,6 +37,11 @@ abstract class ThrottlingController {
 		if( $isRequestLimitReached ) {
 			$throttlingController->throttleRequest();
 		}
+	}
+
+	protected function __construct( ThrottlingStrategy $throttlingStrategy, ThrottlingView $throttlingView ) {
+		$this->throttlingStrategy = $throttlingStrategy;
+		$this->throttlingView = $throttlingView;
 	}
 
 	private function throttleRequest() {

@@ -4,8 +4,17 @@ namespace Airtasker\Challenges\Backend\HttpModules\Model;
 
 use Airtasker\Challenges\Backend\HttpModules\Utils\HttpRequestContext;
 
+/**
+ * The base class for request-limiting strategies.
+ * Provides a simple interface to instantiate and apply a strategy
+ * and to get throttling throttling results.
+ *
+ * Class ThrottlingStrategy
+ * @package Airtasker\Challenges\Backend\HttpModules\Model
+ */
 abstract class ThrottlingStrategy {
 
+	// These constants should be overridden in children classes
 	const RETRY_TIME_IN_SECONDS = 0;
 	const HTTP_RESPONSE_CODE = 0;
 
@@ -14,6 +23,13 @@ abstract class ThrottlingStrategy {
 
 	public function __construct( HttpRequestContext $httpRequestContext ) {
 		$this->httpRequestContext = $httpRequestContext;
+	}
+
+	/**
+	 * Public interface to rate limiting logic
+	 */
+	public function apply() {
+		$this->throttle();
 	}
 
 	public function getRetryTimeInSeconds() : int {
@@ -26,10 +42,6 @@ abstract class ThrottlingStrategy {
 
 	public function isRequestLimitReached() : bool {
 		return $this->isRequestLimitReached ?? false;
-	}
-
-	public function apply() {
-		$this->throttle();
 	}
 
 	abstract public function throttle();
