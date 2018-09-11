@@ -11,7 +11,7 @@ services:
         restart: always
 
     php:
-        build: ./PHP
+        build: ./php
         volumes:
             - ../../../../../:/var/www/html
         restart: always

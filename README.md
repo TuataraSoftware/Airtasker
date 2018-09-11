@@ -30,7 +30,7 @@ Author: Alexey Gerasimov
 
 - For debug purposes: 
 
-`docker-compose -f Challenges/Backend/HttpModules/Docker-debug/docker-compose.yml up --build`
+`docker-compose -f Challenges/Backend/HttpModules/Docker/docker-compose-debug.yml up --build`
 
 ---
 
