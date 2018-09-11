@@ -12,25 +12,25 @@ Author: Alexey Gerasimov
 
 - Include Airtasker/Challenges/Backend/HttpModules/RequestRateLimiter.php:
 
-require_once ( $_SERVER[ 'DOCUMENT_ROOT' ] . '/Airtasker/Challenges/Backend/HttpModules/RequestRateLimiter.php' );
+`require_once ( $_SERVER[ 'DOCUMENT_ROOT' ] . '/Airtasker/Challenges/Backend/HttpModules/RequestRateLimiter.php' );`
 
 - Call RequestRateLimiter::run() method:
 
-Airtasker\Challenges\Backend\HttpModules\RequestRateLimiter\RequestRateLimiter::run();
+`Airtasker\Challenges\Backend\HttpModules\RequestRateLimiter\RequestRateLimiter::run();`
 
 **Deployment:**
 
 - Download repository:
 
-git clone https://github.com/TuataraSoftware/AirtaskerBackendChallenge
+`git clone https://github.com/TuataraSoftware/AirtaskerBackendChallenge`
 
 - Build & run Docker container:
  
-docker-compose -f Challenges/Backend/HttpModules/Docker/docker-compose.yml up --build
+`docker-compose -f Challenges/Backend/HttpModules/Docker/docker-compose.yml up --build`
 
 - For debug purposes: 
 
-docker-compose -f Challenges/Backend/HttpModules/Docker-debug/docker-compose.yml up --build
+`docker-compose -f Challenges/Backend/HttpModules/Docker-debug/docker-compose.yml up --build`
 
 ---
 
