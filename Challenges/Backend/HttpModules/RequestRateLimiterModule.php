@@ -10,14 +10,12 @@ use Exception;
 
 /**
  * The rate limiting module. It has no state and requires no instantiation.
- * The module validates request context and injects it to a controller handling the request.
+ * The module generates request context and injects it to a controller handling the request.
  *
  * Class RequestRateLimiter
  * @package Airtasker\Challenges\Backend\HttpModules
  */
-final class RequestRateLimiter {
-
-	const HTTP_REQUEST_ERROR_MESSAGE = 'Unable to throttle the request. Request context is invalid.';
+final class RequestRateLimiterModule {
 
 	/**
 	 * This method provides public interface to the module.
@@ -25,26 +23,15 @@ final class RequestRateLimiter {
 	 * and not breaking client code execution.
 	 */
 	public static function run() {
+		$httpRequestContext = new HttpRequestContext();
+
 		try {
-			self::processRequest();
+			OneHourController::processRequest( $httpRequestContext );
 		}
 		catch( Exception $exception ) {
 			$errorMessage = $exception->getMessage();
 
 			error_log( $errorMessage );
 		}
-	}
-
-	private static function processRequest() {
-		$httpRequestContext = new HttpRequestContext();
-
-		$isRequestContextValid = $httpRequestContext->isValid();
-
-		if( ! $isRequestContextValid ) {
-			error_log( self::HTTP_REQUEST_ERROR_MESSAGE );
-			return;
-		}
-
-		OneHourController::processRequest( $httpRequestContext );
 	}
 }

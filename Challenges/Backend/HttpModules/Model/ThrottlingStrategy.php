@@ -26,7 +26,7 @@ abstract class ThrottlingStrategy {
 	}
 
 	/**
-	 * Public interface to rate limiting logic
+	 * Public interface to apply rate limiting strategy
 	 */
 	public function apply() {
 		$this->throttle();
@@ -44,5 +44,8 @@ abstract class ThrottlingStrategy {
 		return $this->isRequestLimitReached ?? false;
 	}
 
+	/**
+	 * Rate limiting logic should be implemented in this method
+	 */
 	abstract public function throttle();
 }
