@@ -1,9 +1,8 @@
 Airtasker Backend Challenge: Rate Limiter
 ===================================
+Rate limiting module for PHP web applications. 
 
 Author: Alexey Gerasimov
-
----
 
 Requirements
 --------------------------------------
@@ -13,7 +12,7 @@ Requirements
 Usage
 --------------------------------------
 
-- Include Airtasker/Challenges/Backend/HttpModules/RequestRateLimiterModule.php:
+- Include RequestRateLimiterModule.php in your web application:
 
 ```bash
 require_once ( $_SERVER[ 'DOCUMENT_ROOT' ] . '/Airtasker/Challenges/Backend/HttpModules/RequestRateLimiterModule.php' );
@@ -38,12 +37,6 @@ git clone https://github.com/TuataraSoftware/Airtasker
  
 ```bash
 docker-compose -f Airtasker/Challenges/Backend/HttpModules/Docker/docker-compose.yml up --build
-```
-
-- For debug purposes: 
-
-```bash
-docker-compose -f Airtasker/Challenges/Backend/HttpModules/Docker/docker-compose-debug.yml up --build
 ```
 
 Example
