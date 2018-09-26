@@ -6,6 +6,10 @@
  */
 spl_autoload_register( function( $classNameWithNamespace ) {
 
+	if( stripos( $classNameWithNamespace, 'Airtasker' ) === false ) {
+		return;
+	}
+
 	$relativePath = str_replace( "\\", DIRECTORY_SEPARATOR, $classNameWithNamespace ) . '.php';
 	$fullPath = $_SERVER[ 'DOCUMENT_ROOT' ] . DIRECTORY_SEPARATOR . $relativePath;
 

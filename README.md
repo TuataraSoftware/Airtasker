@@ -8,7 +8,6 @@ Requirements
 --------------------------------------
 
 - Docker 17
-- PHP 7.1
 
 Usage
 --------------------------------------
@@ -38,6 +37,17 @@ git clone https://github.com/TuataraSoftware/Airtasker
  
 ```bash
 docker-compose -f Airtasker/Challenges/Backend/HttpModules/Docker/docker-compose.yml up --build
+```
+
+Testing
+--------------------------------------
+
+- Test environment: PHP 7.1 with Redis extension, PHPUnit 7.3.5
+
+- Run:
+
+```bash
+phpunit ~/Airtasker/Challenges/Backend/HttpModules/Tests --teamcity
 ```
 
 Example
